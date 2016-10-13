@@ -1,5 +1,6 @@
 # Python 常用工具
-coder:HuangYiwei
+From:HuangYiwei
+
 [mail:huanghyw@gmail.com](mailto:huanghyw@gmail.com)
 
 ## db-tools 数据库相关
