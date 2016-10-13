@@ -21,7 +21,7 @@ db = "db-house-td"
 charset = "utf8"
 
 # 默认参数,导出的文件路径配置
-# 如果不在启动的时候传入参数,则默认在当前目录生成导出的excel文件
+# 如果不在启动的时候传入参数,则默认使用此路径保存导出的excel文件
 excel_full_path = "./export_table_columns_info.xls"
 
 reload(sys)
