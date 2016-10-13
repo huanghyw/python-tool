@@ -11,9 +11,6 @@ from optparse import OptionParser
 import MySQLdb
 import xlwt
 
-# opts, args = getopt.getopt(sys.argv[1:], "hi:o:",
-#                            ("help", "host=", "port=", "user=", "passwd=", "database=", "charset=", "output="))
-
 # 默认参数,数据库配置
 # 如果不在启动的时候传入参数,则需要在此处进行数据库配置
 host = "192.168.45.155"
