@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+# Write by HuangYiwei
+# mail:huanghyw@gmail.com
+#
 # 将指定数据库的表结构信息导出到excel
 # 适用于Mysql 5.6.x
 
