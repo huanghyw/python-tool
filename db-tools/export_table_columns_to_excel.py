@@ -13,16 +13,16 @@ import xlwt
 
 # 默认参数,数据库配置
 # 如果不在启动的时候传入参数,则需要在此处进行数据库配置
-host = "192.168.45.155"
-port = 3306
-user = "welicai"
-passwd = "welicai"
-db = "db-house-td"
+host = "127.0.0.1"
+port = 43306
+user = "devuser"
+passwd = "68ddfb638a92"
+db = "db-house-real-loan"
 charset = "utf8"
 
 # 默认参数,导出的文件路径配置
 # 如果不在启动的时候传入参数,则默认使用此路径保存导出的excel文件
-excel_full_path = "./export_table_columns_info.xls"
+excel_full_path = "./db-house-real-loan.xls"
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -73,9 +73,10 @@ for table_index, table_info in enumerate(tables_list):
     global_tables_sheet.write(table_index + 1, 1, table_info[1])
 
     cur.execute("SHOW FULL FIELDS FROM " + table_info[0])
+
     columns_list = cur.fetchall()
     print "=" * 50, table_info[0], "(", table_info[1], ")", "=" * 50
-    table_info_sheet = wbk.add_sheet(table_info[1], cell_overwrite_ok=True)
+    table_info_sheet = wbk.add_sheet(table_info[0], cell_overwrite_ok=True)
     table_info_sheet.write(0, 0, u"字段名称")
     table_info_sheet.write(0, 1, u"字段类型")
     table_info_sheet.write(0, 2, u"是否允许为空")
